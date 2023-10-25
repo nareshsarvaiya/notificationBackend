@@ -26,6 +26,7 @@ public class NotificationController {
 
 	@PostMapping("/submit")
 	public List<Notification> saveNotification(@RequestBody List<Notification> notifications) {
+		System.out.println("test");
 		return notificationService.saveNotification(notifications);
 	}
 
